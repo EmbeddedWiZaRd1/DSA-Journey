@@ -1,0 +1,88 @@
+# General
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.cache
+core
+thumbs.db
+.DS_Store
+
+# Build artifacts
+build/
+bin/
+out/
+dist/
+_build/
+
+# C/C++ object and binary files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.elf
+*.out
+*.i
+*.ii
+
+# Coverage
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled Python files (if present)
+__pycache__/
+*.py[cod]
+
+# IDEs and editors
+.vscode/
+.idea/
+.project
+.classpath
+.cproject
+.settings/
+*.code-workspace
+
+# Visual Studio
+*.vcxproj*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# PlatformIO
+.pio/
+.pioenvs/
+
+# Embedded artifacts
+*.hex
+*.bin
+*.elf
+*.map
+*.axf
+
+# Environment files
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Misc
+tags
+cscope.*
