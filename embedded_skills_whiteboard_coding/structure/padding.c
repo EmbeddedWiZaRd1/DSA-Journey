@@ -1,11 +1,13 @@
 /*
 for a struct Compute the offset (in bytes) of each field from the base address of the struct
-*/
 
 
 
 
 
+learning:
+offset formula
+"The offset of a is %zu",offsetof(my_struct,a) */
 
 
 
@@ -13,6 +15,7 @@ for a struct Compute the offset (in bytes) of each field from the base address o
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 
 
@@ -29,13 +32,12 @@ int main()
 
     my_struct* k=&m;
 
-    printf("The adress of a is %p",&(k->a));
+    printf("The offset of a is %zu",offsetof(my_struct,a));
 
-    printf("\nThe adress of b is %p",&(k->b));
+    printf("\nThe offset of b is %zu",offsetof(my_struct,b));
 
-    printf("\nThe adress of c is %p",&(k->c));
+    printf("\nThe offset of c is %zu",offsetof(my_struct,c));
 
-    printf("\nThe adress of structure my_struct is %p",&k);
 
     return 0;
 }
